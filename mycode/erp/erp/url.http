@@ -1,0 +1,7 @@
+# 插入数据
+POST http://127.0.0.1:8000/insertgoodscategory/ HTTP/1.1
+content-type: application/json
+
+{
+    "分类名称": "交通工具"
+}

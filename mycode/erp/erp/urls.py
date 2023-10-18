@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from apps.erp_test.views import *
+from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('filtergoodscategory/', FilterGoodsCategory),
+    path('insertgoodscategory/', InsertGoodsCategory),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',#新加
     'django_filters',#新加
     'drf_spectacular',#新加
+    'debug_toolbar',
 
 ]
 
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'erp.urls'
